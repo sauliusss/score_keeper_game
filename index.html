@@ -7,17 +7,38 @@
     <link rel="stylesheet" href=".//index.css" />
   </head>
   <body>
-    <h1><span id="p1Score">0</span> to <span id="p2Score">0</span></h1>
-    <select name="" id="playTo">
-      <option value="3">3</option>
-      <option value="4">4</option>
-      <option value="5">5</option>
-      <option value="6">6</option>
-      <option value="7">7</option>
-    </select>
-    <button id="p1Button">+1 Player One</button>
-    <button id="p2Button">+2 Player Two</button>
-    <button id="resetButton">Reset</button>
+    <div class="container">
+      <div class="container-image">
+        <img src="https://wallpapercave.com/wp/wp1961370.jpg" alt="ping pong" />
+      </div>
+      <div class="container-header">
+        <div class="container-title">
+          <p class="title">Ping Pong Score Keeper</p>
+        </div>
+      </div>
+      <div class="container-content">
+        <div class="content">
+          <h1><span id="p1Score">0</span> to <span id="p2Score">0</span></h1>
+          <p class="subtitle">Use the buttons below to keep score</p>
+          <label for="playTo" class="label"
+            >Playing To
+            <select class="select" name="" id="playTo">
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+            </select>
+          </label>
+        </div>
+      </div>
+      <div class="container-footer">
+        <button class="p1Button" id="p1Button">+1 Player One</button>
+        <button class="p2Button" id="p2Button">+1 Player Two</button>
+        <button class="resetButton" id="resetButton">Reset</button>
+      </div>
+    </div>
+
     <script src="./app.js" defer></script>
   </body>
 </html>
